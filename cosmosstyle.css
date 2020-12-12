@@ -1,0 +1,231 @@
+body#colors {
+    background: rgba(41, 76, 119,1);
+    color: white;
+}
+
+#colors #container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.007);
+}
+
+#box{
+    background: gray;
+    height: 200px;
+    width: 200px;
+    margin: 40px auto;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+/**h1:hover{
+    background: radial-gradient(black,gray,yellow, red,green, blue,blueviolet);
+}
+
+#colors #box:hover{
+    background: linear-gradient(39deg,yellow, red);
+    background: radial-gradient(green,red,gray, yellow);
+}
+
+#shadows #container {
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+}
+
+#shadows #container:hover {
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0px 20px 5px -14px rgb(0, 0, 0);
+}
+
+#shadows h1 {
+    color: black;
+}
+
+#shadows h1:hover {
+    color: white;
+    text-shadow: 4px 4px 4px black, 4px 4px 4px black;
+}
+
+#columns{
+    column-count: 6;
+    column-gap: 10px;
+    column-rule-style: dashed;
+    column-rule-width: 1px;
+    column-rule-color:olivedrab;
+}
+
+
+@keyframes box {
+    from { border-radius: 40px; background-color: gray; top: 0; left: 0px;}
+    to   { border-radius: 400px; background-color: black; top: 100px; left: 100px; }
+}
+
+#animations #box {
+    position: relative;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 3 ;
+    animation-direction: alternate;
+    animation: box 10s linear 2s 3 alternate ;
+}
+
+.box2{
+    background: blue;
+    width: 200px;
+    height: 200px;
+    color: white ;
+    
+}
+.box2:hover{
+    background: rebeccapurple;
+    width: 300px;
+    height: 300px;
+    top: -20px;
+    left:30px;
+    transition: width 3s, height 1s, background 5s;
+}
+
+
+.button {
+    display: inline-block;
+    background: #fc3;
+    background: linear-gradient(#fc3, #f91);
+    border: solid 0.7px black;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.button:hover{
+    display: inline-block;
+    background: #fc3;
+    background: linear-gradient(to top, rgb(233, 236, 52), rgb(255, 104, 17));
+    border: solid  1.9px black;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+
+**/
+@keyframes starPluse {
+    from { opacity: 10; }
+    to { opacity: 0.3; }
+}
+@keyframes sunFire{
+    from { box-shadow: 0 0 50px #f5c91a;}
+    to { box-shadow: 0 0 100px #f5c91a;}
+}
+ @keyframes spin {
+     from { transform: rotate(0); }
+     to { transform: rotate(360deg); }
+ }
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#universe{
+    background: black;
+    background: -webkit-radial-gradient(#555, #000);
+    background: -moz-radial-gradient(#555, #000);
+    background: -o-radial-gradient(#555, #000);
+    background: radial-gradient(#555, #000);
+}
+
+#stars{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-image: url('stars.png');
+
+    animation: starPluse 4s infinite alternate;
+}
+
+#sun{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    z-index: 4;
+
+    border-radius: 100%;
+    background: orange;
+
+    background: -webkit-radial-gradient(#f5c313, #ec7e08);
+    background: -moz-radial-gradient(#f5c313, #ec7e08);
+    background: -o-radial-gradient(#f5c313, #ec7e08);
+    background: radial-gradient(#f5c313, #ec7e08);
+    box-shadow: 0 0 50px #f5c19a;
+
+    animation: sunFire 4s infinite alternate;
+}
+
+#earth{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+    z-index: 4;
+    height: 680px;
+    width: 600px;
+
+    border-radius: 100%;
+    
+    animation: spin 30s linear infinite;
+}
+
+#earth1{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+
+    animation: spin 10s linear infinite;
+}
+
+#moonOrbit{
+    
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    z-index: 4;
+    margin-top: -60px;
+    top: 50%;
+    left: -20px;
+    border-radius: 100%;
+
+    animation: spin 8s linear infinite reverse;
+}
+
+#moon{
+    height: 20px;
+    width: 20px;
+
+    background: gray;
+    background: radial-gradient(#ddd, #888);
+
+    border-radius: 100%;
+}
