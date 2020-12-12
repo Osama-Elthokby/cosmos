@@ -1,26 +1,3 @@
-body#colors {
-    background: rgba(41, 76, 119,1);
-    color: white;
-}
-
-#colors #container {
-    width: 600px;
-    margin: 0 auto;
-    padding: 40px;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.007);
-}
-
-#box{
-    background: gray;
-    height: 200px;
-    width: 200px;
-    margin: 40px auto;
-    padding: 50px;
-    box-sizing: border-box;
-    border-radius: 100px;
-}
-
 @keyframes starPluse {
     from { opacity: 10; }
     to { opacity: 0.3; }
